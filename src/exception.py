@@ -1,6 +1,5 @@
 import sys
-import logging
-
+from src.logger import logging
 
 def error_message_details(error, error_detail:sys):
     _,_,exc_tb = error_detail.exc_info()         # returns the tuple (type(e), e, e.__traceback__)
