@@ -1,5 +1,8 @@
 import sys
-from src.logger import logging
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from logger import logging
+#from src.logger import logging
 
 def error_message_details(error, error_detail:sys):
     _,_,exc_tb = error_detail.exc_info()         # returns the tuple (type(e), e, e.__traceback__)
